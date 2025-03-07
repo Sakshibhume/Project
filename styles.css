@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Use relative units for fonts */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #061785, #007bff);
+    color: white;
+    padding: 15px 20px; /* Adjusted padding for smaller screens */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    height: auto; /* Auto height for smaller screens */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Left Logo and Text Container */
+.left-logo-container {
+    display: flex;
+    align-items: center;
+    position: static; /* Changed to static for smaller screens */
+    transform: none; /* Remove transform for smaller screens */
+    margin-bottom: 10px; /* Add spacing for smaller screens */
+}
+
+.logo {
+    width: 60px; /* Smaller logo for mobile */
+    height: auto;
+}
+
+.logo-text {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.marathi-text {
+    font-size: 16px; /* Smaller font size for mobile */
+    font-weight: bold;
+    color: white;
+}
+
+.english-text {
+    font-size: 12px; /* Smaller font size for mobile */
+    color: white;
+}
+
+/* Right Logo Styles */
+.right-logo {
+    position: static; /* Changed to static for smaller screens */
+    transform: none; /* Remove transform for smaller screens */
+    width: 80px; /* Smaller logo for mobile */
+    height: auto;
+    margin-top: 10px; /* Add spacing for smaller screens */
+}
+
+/* Header Title Styles */
+.header-title {
+    text-align: center;
+    flex-grow: 1;
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+}
+
+.marathi-title {
+    font-size: 20px; /* Smaller font size for mobile */
+    margin: 0;
+    font-weight: bold;
+}
+
+.english-title {
+    font-size: 16px; /* Smaller font size for mobile */
+    margin: 0;
+}
+
+/* Prasthav Section Styles */
+.prasthav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Reduced margin for smaller screens */
+}
+
+.prasthav {
+    background: linear-gradient(135deg, #003366, #007bff);
+    color: white;
+    font-size: 20px; /* Smaller font size for mobile */
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 20px; /* Reduced padding for smaller screens */
+    border-radius: 15px; /* Smaller border radius for mobile */
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 100%; /* Full width for smaller screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    background: white;
+    max-width: 100%; /* Full width for smaller screens */
+    margin: 20px auto;
+    padding: 20px; /* Reduced padding for smaller screens */
+    border-radius: 15px; /* Smaller border radius for mobile */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 14px; /* Smaller font size for mobile */
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    border: 2px solid #007bff;
+    border-radius: 8px; /* Smaller border radius for mobile */
+    box-shadow: 0 0 6px rgba(173, 216, 230, 0.3); /* Reduced shadow for mobile */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+button {
+    width: 150px; /* Smaller button for mobile */
+    background-color: #0d7b27;
+    color: white;
+    border: none;
+    padding: 10px; /* Reduced padding for smaller screens */
+    font-size: 14px; /* Smaller font size for mobile */
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 8px; /* Smaller border radius for mobile */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile View (Hide Both Logos) */
+@media (max-width: 767px) {
+    .left-logo-container,
+    .right-logo {
+        display: none; /* Hide both logos on mobile */
+    }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 768px) {
+    header {
+        height: 120px; /* Fixed height for larger screens */
+        padding: 20px;
+    }
+
+    .left-logo-container {
+        position: absolute;
+        display: flex; /* Ensure the left logo is visible */
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo {
+        width: 80px; /* Larger logo for tablets and desktops */
+    }
+
+    .marathi-text {
+        font-size: 18px; /* Larger font size for tablets and desktops */
+    }
+
+    .english-text {
+        font-size: 14px; /* Larger font size for tablets and desktops */
+    }
+
+    .right-logo {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 120px; /* Larger logo for tablets and desktops */
+        display: block; /* Ensure the right logo is visible */
+    }
+
+    .marathi-title {
+        font-size: 24px; /* Larger font size for tablets and desktops */
+    }
+
+    .english-title {
+        font-size: 18px; /* Larger font size for tablets and desktops */
+    }
+
+    .prasthav {
+        font-size: 24px; /* Larger font size for tablets and desktops */
+        padding: 20px 80px; /* Larger padding for tablets and desktops */
+        border-radius: 20px; /* Larger border radius for tablets and desktops */
+        width: 95%; /* Adjusted width for tablets and desktops */
+        max-width: 1200px; /* Fixed max-width for tablets and desktops */
+    }
+
+    form {
+        max-width: 1200px; /* Fixed max-width for tablets and desktops */
+        padding: 30px; /* Larger padding for tablets and desktops */
+        border-radius: 20px; /* Larger border radius for tablets and desktops */
+    }
+
+    label {
+        font-size: 16px; /* Larger font size for tablets and desktops */
+    }
+
+    input {
+        font-size: 16px; /* Larger font size for tablets and desktops */
+        border-radius: 10px; /* Larger border radius for tablets and desktops */
+    }
+
+    button {
+        width: 180px; /* Larger button for tablets and desktops */
+        padding: 12px; /* Larger padding for tablets and desktops */
+        font-size: 16px; /* Larger font size for tablets and desktops */
+        border-radius: 10px; /* Larger border radius for tablets and desktops */
+    }
+}

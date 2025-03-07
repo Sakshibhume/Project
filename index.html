@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buldhana Police Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="left-logo-container">
+            <img src="gov_logo.png" alt="Left Logo" class="logo left-logo">
+            <div class="logo-text">
+                <div class="marathi-text">महाराष्ट्र शासन</div>
+                <div class="english-text">Government of Maharashtra</div>
+            </div>
+        </div>
+        <div class="header-title">
+            <h1 class="marathi-title">बुलढाणा पोलीस</h1>
+            <h2 class="english-title">BULDHANA POLICE</h2>
+        </div>
+        <img src="police_logo.png" alt="Right Logo" class="logo right-logo">
+    </header>
+    
+    <main>
+        <!-- Prasthav Section -->
+        <div class="prasthav-container">
+            <div class="prasthav">प्रस्ताव</div>
+        </div>
+
+        <!-- Form Section -->
+        <form>
+            <label for="policeStation">पो. स्टे नाव:</label>
+            <input type="text" id="policeStation" name="policeStation" placeholder="पो. स्टे नाव">
+
+            <label for="crimeNo">अपराध नं.:</label>
+            <input type="text" id="crimeNo" name="crimeNo" placeholder="अपराध नं.">
+
+            <label for="section">कलम:</label>
+            <input type="text" id="section" name="section" placeholder="कलम">
+
+            <label for="accusedName">आरोपीचे नाव:</label>
+            <input type="text" id="accusedName" name="accusedName" placeholder="आरोपीचे नाव">
+
+            <label for="accusedAddress">आरोपीचा पत्ता:</label>
+            <input type="text" id="accusedAddress" name="accusedAddress" placeholder="आरोपीचा पत्ता">
+
+            <label for="jailReleaseDate">जेल रिलीज दि.:</label>
+            <input type="date" id="jailReleaseDate" name="jailReleaseDate">
+
+            <label for="other">इतर:</label>
+            <input type="text" id="other" name="other" placeholder="इतर माहिती प्रविष्ट करा">
+
+            <label for="photo">फोटो:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
